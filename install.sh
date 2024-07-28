@@ -8,6 +8,7 @@ wget -O pretrained_models/hallo/net.pth https://huggingface.co/fudan-generative-
 echo "Install dependencies"
 conda create -n hallo python==3.10
 conda activate hallo
+conda install ffmpeg
 pip install -r requirements.txt
 
 
