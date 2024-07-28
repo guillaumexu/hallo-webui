@@ -37,6 +37,13 @@ from diffusers import AutoencoderKL, DDIMScheduler
 from omegaconf import OmegaConf
 from torch import nn
 
+import sys
+# 获取当前文件的目录
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# 获取项目根目录
+project_root = os.path.abspath(os.path.join(current_dir, '..'))
+
 from hallo.animate.face_animate import FaceAnimatePipeline
 from hallo.datasets.audio_processor import AudioProcessor
 from hallo.datasets.image_processor import ImageProcessor
