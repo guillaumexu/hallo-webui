@@ -16,4 +16,7 @@ echo "Install GPU libraries"
 pip install torch==2.2.2+cu121 torchaudio torchvision --index-url https://download.pytorch.org/whl/cu121
 pip install onnxruntime-gpu
 
+echo "add path of modules hallo"
+export PYTHONPATH="$PYTHONPATH:/home/guillaume/hallo-webui/hallo"
+
 echo "Installation complete"
