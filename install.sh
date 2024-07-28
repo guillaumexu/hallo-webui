@@ -6,8 +6,8 @@ git clone https://huggingface.co/fudan-generative-ai/hallo pretrained_models
 wget -O pretrained_models/hallo/net.pth https://huggingface.co/fudan-generative-ai/hallo/resolve/main/hallo/net.pth?download=true
 
 echo "Install dependencies"
-python3 -m venv venv
-source venv/bin/activate
+conda create -n hallo python==3.10
+conda activate hallo
 pip install -r requirements.txt
 pip install -e . 
 
