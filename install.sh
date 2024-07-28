@@ -9,7 +9,7 @@ echo "Install dependencies"
 conda create -n hallo python==3.10
 conda activate hallo
 pip install -r requirements.txt
-pip install -e . 
+
 
 echo "Install GPU libraries"
 pip install torch==2.2.2+cu121 torchaudio torchvision --index-url https://download.pytorch.org/whl/cu121
